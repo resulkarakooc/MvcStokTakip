@@ -2,6 +2,7 @@
 
 ## Bir Beyaz Eşya Firması için  Stok Takip Sistemi
 
+ **Kullanılan Teknolojiler**
 
 
 <img src="MvcDbStok/Ekran görüntüsü 2024-04-23 134108.jpg" alt="Proje Resmi" width="700" height="350">
