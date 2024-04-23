@@ -1,0 +1,39 @@
+﻿@model MvcStokTakip.Models.Entity.TBLURUNLER
+
+@{
+    ViewBag.Title = "yeniurun";
+    Layout = "~/Views/Shared/_MainLayoutView.cshtml";
+}
+
+<br />
+<h2>Yeni Ürün Kayıt</h2>
+<br />
+
+<form class="form-group" method="post">
+
+    <label for="ekleme">Ürün ismi</label>
+    <input id="ekleme" type="text" name="URUNAD" class="form-control" required="" maxlength="35"/>
+    <br />
+    <label for="marka">Marka ismi</label>
+    <input id="marka" type="text" name="MARKA" class="form-control" required="" maxlength="35"/>
+    <br />
+    <label for="drop">Kategori seçiniz</label>
+    @Html.DropDownListFor(m => m.TBLKATEGORILER.KATEGORIID,(List<SelectListItem>)ViewBag.dgr,new {@class="form-control"})
+    <br />
+    <label for="sale">Ürün Fiyatı</label>
+    <input id="sale" type="text" name="Fiyat" class="form-control" required=""/>
+    <br />
+    <label for="stok">Stok Adeti</label>
+    <input id="stok" type="number" name="STOK" class="form-control" required="" max="250" />
+    <br />
+    <button id="btn1" class="btn btn-warning">Ekle</button>
+    
+</form>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script>
+    $('#btn1').click(function () {
+        alert("Ürün Eklendi...");
+    });
+</script>
+
+

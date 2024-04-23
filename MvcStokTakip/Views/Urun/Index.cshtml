@@ -1,0 +1,60 @@
+﻿@using MvcStokTakip.Models.Entity;
+@model List<TBLURUNLER>
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayoutView.cshtml";
+}
+<br />
+<h2>Ürünler</h2>
+<br />
+
+
+
+<table id="tblurun" class="table table-info">
+    <thead>
+        <tr>
+            <th>Ürün ID</th>
+            <th>Ürün Adı</th>
+            <th>Ürün Marka</th>
+            <th>Ürün Katgori</th>
+            <th>Ürün Fiyat</th>
+            <th>Ürün Stok</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var y in Model)
+        {
+            <tr>
+                <td>@y.URUNID</td>
+                <td>@y.URUNAD</td>
+                <td>@y.MARKA</td>
+                <td>@y.TBLKATEGORILER.KATEGORIAD</td>
+                <td>@y.Fiyat</td>
+                <td>@y.STOK</td>
+                <td><a href="/Urun/Sil/@y.URUNID" class="btn btn-danger">Sil</a></td>
+                <td><a href="/Urun/UrunGetir/@y.URUNID" class="btn btn-success">Güncelle</a></td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+<br />
+<a href="/Urun/yeniUrun" class="btn btn-primary">Yeni Ürün Ekle</a>
+<br />
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<link href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+
+
+
+
+
+<script>
+    
+    $('#tblurun').Datatable();
+</script>
+

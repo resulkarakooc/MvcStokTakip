@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayoutView.cshtml";
+}
+
+<br />
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal1">Satış Yap</button>
+
+<div class="modal" id="Modal1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div style="font-size:25px;" class="modal-title">
+                    Satış Yapma Ekranı
+                </div>
+            </div>
+            <div class="modal-body">
+                <form method="post">
+                    <label>Ürün İsmi</label>
+                    <input type="text" class="form-control" name="URUN" required="" maxlength="50" />
+                    <br />
+                   
+                    <label>Müşteri İsmi</label>
+                    <input type="text" class="form-control" name="MUSTERI" required="" maxlength="50" />
+                    <br />
+
+                    <label>Adet</label>
+                    <input type="text" class="form-control" name="ADET" required="" maxlength="50" />
+                    <br />
+
+                    <label>Fiyat</label>
+                    <input type="text" class="form-control" name="FIYAT" required="" maxlength="50" />
+                    <br />
+
+                    <button type="submit" class="btn btn-primary">Satış Ekle</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" >Vazgeç</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
