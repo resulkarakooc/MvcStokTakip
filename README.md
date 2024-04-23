@@ -7,6 +7,7 @@
  Entitiy Framework Orm teknolojisi <br />
  Html Css JavaScript Front-End design <br />
  Bootstrap(Css framework) <br />
+ JQuery(JavaScript Framework)
  ADO.NET data model <br />
  Microsoft Sql Database <br />
  
