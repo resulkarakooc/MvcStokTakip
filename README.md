@@ -2,7 +2,7 @@
 
 ## Bir Beyaz Eşya Firması için  Stok Takip Sistemi
 
- **Kullanılan Teknolojiler**
+### **Kullanılan Teknolojiler** <br />
  C# programlama dili <br />
  Entitiy Framework Orm teknolojisi <br />
  Html Css JavaScript Front-End design <br />
