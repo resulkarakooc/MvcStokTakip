@@ -3,6 +3,13 @@
 ## Bir Beyaz Eşya Firması için  Stok Takip Sistemi
 
  **Kullanılan Teknolojiler**
+ C# programlama dili <br />
+ Entitiy Framework Orm teknolojisi <br />
+ Html Css JavaScript Front-End design <br />
+ Bootstrap(Css framework) <br />
+ ADO.NET data model <br />
+ Microsoft Sql Database <br />
+ 
 
 
 <img src="MvcDbStok/Ekran görüntüsü 2024-04-23 134108.jpg" alt="Proje Resmi" width="700" height="350">
